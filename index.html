@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Alex Moreau</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-logo">AM</div>
+    <ul class="nav-links">
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="dot-live"></span>
+      <span>Disponible</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-label">
+      <span class="mono">&mdash; Designer &amp; Développeur créatif</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="line line-1">Alex</span>
+      <span class="line line-2 italic">Moreau</span>
+    </h1>
+
+    <div class="hero-sub">
+      <p>Je conçois des expériences numériques<br />qui restent en mémoire.</p>
+    </div>
+
+    <div class="hero-scroll">
+      <span class="mono">Scroller ↓</span>
+    </div>
+
+    <div class="hero-deco" aria-hidden="true">
+      <span class="big-num">2025</span>
+    </div>
+  </header>
+
+  <!-- Bande défilante -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Design &nbsp;·&nbsp; Développement &nbsp;·&nbsp; Identité visuelle &nbsp;·&nbsp; Expérience utilisateur &nbsp;·&nbsp; Motion &nbsp;·&nbsp;</span>
+      <span>Design &nbsp;·&nbsp; Développement &nbsp;·&nbsp; Identité visuelle &nbsp;·&nbsp; Expérience utilisateur &nbsp;·&nbsp; Motion &nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- Projets -->
+  <section class="projets" id="projets">
+    <div class="section-header">
+      <span class="section-num mono">01</span>
+      <h2>Projets</h2>
+    </div>
+
+    <div class="projets-grid">
+
+      <article class="card card-large" data-index="01">
+        <div class="card-img-wrap">
+          <div class="card-img" style="--hue: 220;"></div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta mono">Branding · Web</div>
+          <h3>Nova Studio</h3>
+          <p>Refonte complète de l'identité visuelle et du site vitrine d'un studio de design parisien.</p>
+          <a class="card-link" href="#">Voir le projet →</a>
+        </div>
+      </article>
+
+      <article class="card" data-index="02">
+        <div class="card-img-wrap">
+          <div class="card-img" style="--hue: 12;"></div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta mono">App · UX</div>
+          <h3>Pulse Finance</h3>
+          <p>Application mobile de gestion budgétaire avec visualisations animées.</p>
+          <a class="card-link" href="#">Voir le projet →</a>
+        </div>
+      </article>
+
+      <article class="card" data-index="03">
+        <div class="card-img-wrap">
+          <div class="card-img" style="--hue: 140;"></div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta mono">Editorial · Print</div>
+          <h3>Revue Terrae</h3>
+          <p>Direction artistique d'un magazine indépendant dédié à l'écologie urbaine.</p>
+          <a class="card-link" href="#">Voir le projet →</a>
+        </div>
+      </article>
+
+      <article class="card card-wide" data-index="04">
+        <div class="card-img-wrap">
+          <div class="card-img" style="--hue: 50;"></div>
+        </div>
+        <div class="card-info">
+          <div class="card-meta mono">Développement · Motion</div>
+          <h3>Orbital — Expérience interactive</h3>
+          <p>Micro-site expérimental autour de la physique des orbites, en WebGL.</p>
+          <a class="card-link" href="#">Voir le projet →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="apropos" id="apropos">
+    <div class="apropos-inner">
+      <div class="apropos-left">
+        <div class="section-header">
+          <span class="section-num mono">02</span>
+          <h2>À propos</h2>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait"></div>
+          <div class="portrait-label mono">Alex Moreau, Bordeaux</div>
+        </div>
+      </div>
+
+      <div class="apropos-right">
+        <p class="apropos-intro">
+          Designer et développeur indépendant basé à Bordeaux, je travaille à l'intersection du design éditorial et du développement front-end depuis <em>7 ans</em>.
+        </p>
+        <p>
+          Mon approche : partir du sens avant la forme. Chaque projet commence par comprendre ce qu'il doit communiquer, puis construire une esthétique à sa mesure.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-col">
+            <div class="skill-col-title mono">Design</div>
+            <ul>
+              <li>Figma / Sketch</li>
+              <li>Direction artistique</li>
+              <li>Typographie</li>
+              <li>Motion design</li>
+            </ul>
+          </div>
+          <div class="skill-col">
+            <div class="skill-col-title mono">Développement</div>
+            <ul>
+              <li>HTML / CSS / JS</li>
+              <li>React / Next.js</li>
+              <li>WebGL / Three.js</li>
+              <li>GSAP / Framer Motion</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-link">
+          <a href="#" class="btn-outline">Télécharger le CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-header">
+        <span class="section-num mono">03</span>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-cta">
+        <p class="contact-big">Travaillons<br /><em>ensemble.</em></p>
+        <a href="mailto:alex@moreau.design" class="email-link">alex@moreau.design</a>
+      </div>
+
+      <div class="contact-socials">
+        <a href="#" class="social-link">LinkedIn</a>
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">Dribbble</a>
+        <a href="#" class="social-link">Twitter / X</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="mono">© 2025 Alex Moreau</span>
+    <span class="mono">Bordeaux, France</span>
+  </footer>
+
+  <script>
+    // Curseur personnalisé
+    const cursor = document.getElementById('cursor');
+    const dot = document.getElementById('cursorDot');
+    let mx = 0, my = 0, cx = 0, cy = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.transform = `translate(${mx}px, ${my}px)`;
+    });
+
+    (function raf() {
+      cx += (mx - cx) * 0.12;
+      cy += (my - cy) * 0.12;
+      cursor.style.transform = `translate(${cx}px, ${cy}px)`;
+      requestAnimationFrame(raf);
+    })();
+
+    document.querySelectorAll('a, button, .card').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // Apparition au scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .apropos-inner, .contact-cta').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
